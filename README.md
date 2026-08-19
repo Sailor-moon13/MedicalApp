@@ -50,9 +50,9 @@ MedicalApp/
    pip install -r requirements.txt
    ```
 4. Запустите приложение:
-  ```
-  python run.py
-  ```
+   ```
+   python run.py
+   ```
 
 
 
