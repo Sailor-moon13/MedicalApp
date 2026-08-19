@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Medical AI</title>
+
+    <link rel="stylesheet"
+          href="/static/css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Medical AI Assistant</h1>
+
+        <p class="subtitle">
+            Анализ медицинских изображений с помощью искусственного интеллекта
+        </p>
+
+        <label>Выберите модель</label>
+
+        <select id="model">
+
+            <option value="bone_fracture">Bone Fracture</option>
+            <option value="brain_tumor">Brain Tumor</option>
+            <option value="pneumonia">Pneumonia</option>
+            <option value="alzheimer">Alzheimer</option>
+
+        </select>
+
+        <label class="upload-area" for="image">
+
+            <input
+                type="file"
+                id="image"
+                accept="image/*"
+            >
+
+            <p>
+
+                📷 Выберите изображение
+
+            </p>
+
+        </label>
+
+        <img
+            id="preview"
+            src=""
+        >
+
+        <button id="predictButton">
+
+            Анализировать
+
+        </button>
+
+        <div id="result">
+
+            Результат появится здесь
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/js/script.js"></script>
+
+</body>
+</html>
